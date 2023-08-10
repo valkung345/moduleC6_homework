@@ -1,18 +1,31 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Модуль C6-Задание 3</title>
-    <link href="css/styles.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Чат WebSocket</title>
 </head>
 <body>
-    <h2>WebSocket Test</h2>
-
-    <button class="btn j-btn-open">Открыть соединение</button>
-    <button class="btn j-btn-close">Закрыть соединение</button>
-    <button class="btn j-btn-send">Отправить сообщение</button>
-    
-    <div id="output"></div>
-    <script src="js/javascript.js "></script>
+	<div class="wrapper">
+	<header class="header">
+		<h1 class="title">Чат c WebSocket</h1>
+	</header>
+	<main class="main">
+		<section class="chat">
+			<form class="form-chat form" action="#" >
+				<input class="form-input input" type="text" name="text" placeholder="Здесь вводится текст сообщения">
+				<button  class="form-btn btn-mess"  >Отправить</button>
+				<button class="form-btn geo-location btn-geo" >Гео-локация</button>
+			  </form>
+			  <div class="wrapper-chat">
+				<div class="user-messages"></div>
+				<div class="server-messages">Удалить все сообщения</div>
+			  </div>
+		</section>
+	</main>
+    </div>
+	<script src="6-3.js"></script>
 </body>
 </html>
